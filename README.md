@@ -1,6 +1,6 @@
 # RPG API 
 
-API RESTful assíncrona de RPG construída com **FastAPI** e **SQLite**, com autenticação via **JWT**. O sistema de batalha é baseado no projeto `RPG_OOP.py`, com inimigos escalados por nível, sistema de loot, inventário e morte permanente.
+API RESTful assíncrona de RPG construída com **FastAPI** e **SQLite**, com autenticação via **JWT**. O sistema de batalha é baseado no projeto `RPG_OOP.py`, com inimigos escalados por nível, sistema de loot, inventário e morte "permanente".
 
 ---
 
