@@ -5,7 +5,7 @@ from database import database, engine, metadata
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
-    from models import player, battle, inventory  # garante registro dos models
+    from models import player, battle, inventory  # garante registro dos models, porém fuma teu HD, tá meio que na gambiarra mas é mais por questão de testes
     await database.connect()
     metadata.create_all(engine)
     yield
@@ -14,7 +14,7 @@ async def lifespan(app: FastAPI):
 
 app = FastAPI(
     title="RPG API",
-    description="API assíncrona de RPG com batalhas, inventário e JWT.",
+    description="API assíncrona de RPG com batalhas, inventário e JWT e muito caos.",
     version="1.0.0",
     lifespan=lifespan,
 )

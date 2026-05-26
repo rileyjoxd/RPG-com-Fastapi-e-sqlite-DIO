@@ -1,6 +1,6 @@
 import sqlalchemy as sa
 from database import metadata
-
+# Essa tabela é mais para questão de verificar bugs, porém ela não é exatamente necessária, e come teu armazenamento.
 battles = sa.Table(
     "battles",
     metadata,

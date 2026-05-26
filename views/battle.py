@@ -26,7 +26,7 @@ class BattleActionOut(BaseModel):
     message: str
     player_health: int
     enemy_health: int
-    result: str | None = None  # victory, defeat, fled, ongoing
+    result: str | None = None  # victory, defeat, fled, ongoing, status para monitoramento da batalha, são auto explicativos.
     loot: list[str] | None = None
     level_up: bool = False
     new_level: int | None = None
