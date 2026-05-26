@@ -1,4 +1,4 @@
-# RPG API 🐉
+# RPG API 
 
 API RESTful assíncrona de RPG construída com **FastAPI** e **SQLite**, com autenticação via **JWT**. O sistema de batalha é baseado no projeto `RPG_OOP.py`, com inimigos escalados por nível, sistema de loot, inventário e morte permanente.
 
@@ -78,7 +78,7 @@ O token é obtido no endpoint `/auth/login` e expira em **30 minutos**.
 
 ## Endpoints
 
-### 🔓 Auth — sem token necessário
+###  Auth — sem token necessário
 
 #### `POST /auth/register`
 Cria um novo personagem com nome único.
@@ -127,19 +127,19 @@ Recebe o ID do personagem e retorna o token de acesso.
 #### `GET /players/`
 Lista todos os personagens ordenados por nível (ranking).
 
-#### `GET /players/me` 🔒
+#### `GET /players/me` 
 Retorna os dados do personagem autenticado.
 
 #### `GET /players/{player_id}`
 Retorna os dados de qualquer personagem pelo ID.
 
-#### `POST /players/revive` 🔒
+#### `POST /players/revive` 
 Ressuscita o personagem após uma derrota, restaurando o HP para 100.
 Só funciona se o personagem estiver morto (HP = 0).
 
 ---
 
-### ⚔️ Battle 🔒
+###  Battle 
 
 #### `POST /battle/start`
 Inicia uma batalha contra um inimigo aleatório escalado ao nível do personagem.
@@ -192,7 +192,7 @@ Retorna o histórico de batalhas do personagem autenticado.
 
 ---
 
-### 🎒 Inventory 🔒
+### Inventory 
 
 #### `GET /inventory/`
 Lista todos os itens do inventário do personagem.
